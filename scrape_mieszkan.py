@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 def pobierz_linki():
     links = []
-    for i in range(6):
+    for i in range(1):
         url = f"https://www.portel.pl/ogloszenia/nieruchomosci?ns={i}"
         response = requests.get(url)
         soup = BeautifulSoup(response.text, "html.parser")
@@ -17,12 +17,15 @@ def pobierz_dane_mieszkania(link):
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
         dane_nieruchomosci = soup.find('fieldset', class_='nier')
-        powierzchnia = dane_nieruchomosci.find('div', class_='lewyN2').text.strip() if dane_nieruchomosci else None
-        pietro = dane_nieruchomosci.find_all('div', class_='lewyN2')[1].text.strip() if (dane_nieruchomosci and len(dane_nieruchomosci.find_all('div', class_='lewyN2')) > 1) else None
-        cena = dane_nieruchomosci.find_all('div', class_='lewyN2')[2].text.strip() if (dane_nieruchomosci and len(dane_nieruchomosci.find_all('div', class_='lewyN2')) > 2) else None
-        liczba_pokoi = dane_nieruchomosci.find_all('div', class_='lewyN2')[3].text.strip() if (dane_nieruchomosci and len(dane_nieruchomosci.find_all('div', class_='lewyN2')) > 3) else None
-        lokalizacja = dane_nieruchomosci.find_all('div', class_='lewyN2')[4].text.strip() if (dane_nieruchomosci and len(dane_nieruchomosci.find_all('div', class_='lewyN2')) > 4) else None
-        typ_zabudowy = dane_nieruchomosci.find_all('div', class_='lewyN2')[5].text.strip() if (dane_nieruchomosci and len(dane_nieruchomosci.find_all('div', class_='lewyN2')) > 5) else None
+
+        dane = {}
+        if dane_nieruchomosci:
+            pola = dane_nieruchomosci.find_all('div', class_='lewyN')
+            for pole in pola:
+                nazwa_pola = pole.text.strip()
+                wartosc_pola = pole.find_next_sibling('div', class_='lewyN2').text.strip() if pole.find_next_sibling('div', class_='lewyN2') else None
+                dane[nazwa_pola] = wartosc_pola
+
         dane_kontaktowe = soup.find('fieldset', class_='kontakt')
         adres = dane_kontaktowe.find('div', class_='lewagr').find('h5').text.strip() if dane_kontaktowe else None
         tel = dane_kontaktowe.find('div', id='telkon').find('h5').text.strip() if dane_kontaktowe.find('div', id='telkon') else None
@@ -31,13 +34,9 @@ def pobierz_dane_mieszkania(link):
         with open("wyniki.txt", "a", encoding="utf-8") as f:
             f.write("Link do danych: {}\n".format(full_link))
             f.write("\nDane nieruchomości:\n")
-            f.write("Powierzchnia: {}\n".format(powierzchnia))
-            f.write("Piętro: {}\n".format(pietro))
-            f.write("Cena: {}\n".format(cena))
-            f.write("Liczba pokoi: {}\n".format(liczba_pokoi))
-            f.write("Lokalizacja: {}\n".format(lokalizacja))
-            f.write("Typ zabudowy: {}\n".format(typ_zabudowy))
-
+            for nazwa, wartosc in dane.items():
+                f.write("{}: {}\n".format(nazwa, wartosc))
+            
             f.write("\nDane kontaktowe:\n")
             f.write("Adres: {}\n".format(adres))
             f.write("Tel.: {}\n".format(tel))
