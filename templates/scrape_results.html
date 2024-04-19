@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrape Results</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    {% for result in results %}
+    <div class="box">
+        <h2><a href="{{ result['Link do danych'] }}">{{ result['Link do danych'] }}</a></h2>
+        <table>
+            <tr>
+                <th colspan="2">Dane nieruchomości:</th>
+            </tr>
+            {% for key, value in result['Dane nieruchomości'].items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <th colspan="2">Dane kontaktowe:</th>
+            </tr>
+            {% for key, value in result['Dane kontaktowe'].items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endfor %}
+</body>
+</html>
