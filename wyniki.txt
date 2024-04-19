@@ -1,79 +1,447 @@
-Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/na-sprzedaz-mieszkanie-2-pokojowe-na-ulicy/783585
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/domy-mieszkalne/nieruchomosci-anna-kraszewska-sprzedam-dom/780810
 
 Dane nieruchomości:
-Powierzchnia:: 47 m²
-Piętro:: Parter
-Cena:: 255 000 zł  
-(5 426 zł/m²)
-Rynek:: wtórny
-Liczba pokoi:: 2
-Lokalizacja:: Elbląg
-Typ zabudowy:: dom wielorodzinny
-Rok budowy:: do 1945 r.
-
-Dane kontaktowe:
-Adres: Ul. Grunwaldzka
-Tel.: None
-Kom.: 50X XXX XXX (pokaż)
-Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/2-pokojowe-mieszkanie-z-tarasem-nowe-w-regal/783504
-
-Dane nieruchomości:
-Powierzchnia:: 35 m²
-Piętro:: 1
-Cena:: 385 000 zł  
-(11 000 zł/m²)
-Rynek:: wtórny
-Liczba pokoi:: 2
-Lokalizacja:: Elbląg
-Typ zabudowy:: apartamentowiec
+Powierzchnia:: 205 m²
+Liczba pięter:: 1
+Cena:: 659 000 zł  
+(3 215 zł/m²)
+Rynek:: pierwotny
+Liczba pokoi:: 7
+Lokalizacja:: pow. elbląski
+Typ budynku:: wolnostojący
 Rok budowy:: między 2021 a 2024 r.
 
 Dane kontaktowe:
-Adres: Elbląg
+Adres: ul. Studzienna 27-28A, 82-300 Elbląg
 Tel.: None
-Kom.: 60X XXX XXX (pokaż) 
-Nie odpowiadam na SMS-y
-Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/nieruchomosci-anna-kraszewska-wynajme/780899
+Kom.: 50X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/nieruchomosci-anna-kraszewska-sprzedam/783530
 
 Dane nieruchomości:
-Powierzchnia:: 52 m²
-Piętro:: 1
-Cena:: 1 700 zł  
-(33 zł/m²)
+Powierzchnia:: 48 m²
+Piętro:: Parter
+Cena:: 275 000 zł  
+(5 729 zł/m²)
+Rynek:: wtórny
 Liczba pokoi:: 3
 Lokalizacja:: Elbląg
-Typ zabudowy:: blok
+Typ zabudowy:: kamienica
+Rok budowy:: do 1945 r.
 
 Dane kontaktowe:
 Adres: ul. Studzienna 27-28A, 82-300 Elbląg
 Tel.: 55 XXX XX XX (pokaż)
 Kom.: 50X XXX XXX (pokaż)
-Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/nieruchomosci-anna-kraszewska-sprzedamy/780808
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/nieruchomosci-anna-kraszewska-sprzedamy/784325
 
 Dane nieruchomości:
-Powierzchnia:: 5065 m²
-Cena:: 295 000 zł  
-(58 zł/m²)
+Powierzchnia:: 25 m²
+Piętro:: 2
+Cena:: 280 000 zł  
+(11 200 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 2
 Lokalizacja:: Elbląg
+Typ zabudowy:: apartamentowiec
+Rok budowy:: między 2001 a 2010 r.
 
 Dane kontaktowe:
 Adres: ul. Studzienna 27-28A, 82-300 Elbląg
 Tel.: None
 Kom.: 50X XXX XXX (pokaż)
-Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/galeria-nieruchomosci-z-pasji-i-milosci/783077
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/galeria-nieruchomosci-z-pasji-i-milosci/783075
 
 Dane nieruchomości:
-Powierzchnia:: 99 m²
-Piętro:: 2
-Cena:: 340 000 zł  
-(3 434 zł/m²)
+Powierzchnia:: 34 m²
+Piętro:: 4
+Cena:: 269 000 zł  
+(7 912 zł/m²)
 Rynek:: wtórny
-Liczba pokoi:: 4
+Liczba pokoi:: 2
 Lokalizacja:: Elbląg
-Typ zabudowy:: kamienica
+Typ zabudowy:: blok
 Rok budowy:: między 1946 a 1990 r.
 
 Dane kontaktowe:
-Adres: Elbląg, Czerniakowska
+Adres: ul. Broniewskiego
 Tel.: None
 Kom.: 79X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/galeria-nieruchomosci-z-pasji-i-milosci/781304
+
+Dane nieruchomości:
+Powierzchnia:: 65 m²
+Piętro:: 1
+Cena:: 430 000 zł  
+(6 615 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 3
+Lokalizacja:: Elbląg
+Typ zabudowy:: blok
+Rok budowy:: między 1991 a 2000 r.
+
+Dane kontaktowe:
+Adres: Elbląg, Wyczółkowskiego
+Tel.: None
+Kom.: 79X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/785260
+
+Dane nieruchomości:
+Powierzchnia:: 38 m²
+Piętro:: Parter
+Cena:: 230 000 zł  
+(6 053 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 2
+Lokalizacja:: Elbląg
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-i-budynki-uzytkowe/future-nieruchomosci-wynajme-komercyjny/780562
+
+Dane nieruchomości:
+Powierzchnia:: 10 m²
+Cena:: 550 zł  
+(55 zł/m²)
+Lokalizacja:: Elbląg
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-i-budynki-uzytkowe/future-nieruchomosci-wynajme-komercyjny/780561
+
+Dane nieruchomości:
+Powierzchnia:: 28 m²
+Cena:: 1 100 zł  
+(39 zł/m²)
+Lokalizacja:: Elbląg
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-i-budynki-uzytkowe/future-nieruchomosci-sprzedam-komercyjny/780560
+
+Dane nieruchomości:
+Powierzchnia:: 774 m²
+Cena:: 550 000 zł  
+(711 zł/m²)
+Lokalizacja:: pow. elbląski
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/future-nieruchomosci-sprzedam-dzialke/777018
+
+Dane nieruchomości:
+Powierzchnia:: 74092 m²
+Cena:: 590 000 zł  
+(8 zł/m²)
+Lokalizacja:: pow. elbląski
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-i-budynki-uzytkowe/future-nieruchomosci-sprzedam-komercyjny/775873
+
+Dane nieruchomości:
+Powierzchnia:: 91 m²
+Cena:: 499 000 zł  
+(5 484 zł/m²)
+Lokalizacja:: Elbląg
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/767869
+
+Dane nieruchomości:
+Powierzchnia:: 48 m²
+Piętro:: 1
+Cena:: 299 000 zł  
+(6 229 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 2
+Lokalizacja:: Elbląg
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/future-nieruchomosci-sprzedam-dzialke-kadyny/760469
+
+Dane nieruchomości:
+Powierzchnia:: 10060 m²
+Cena:: 748 000 zł  
+(74 zł/m²)
+Lokalizacja:: pow. elbląski
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/757593
+
+Dane nieruchomości:
+Powierzchnia:: 28 m²
+Piętro:: Parter
+Cena:: 238 000 zł  
+(8 500 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 1
+Lokalizacja:: Mierzeja
+Rok budowy:: między 2021 a 2024 r.
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/757591
+
+Dane nieruchomości:
+Powierzchnia:: 28 m²
+Piętro:: Parter
+Cena:: 235 110 zł  
+(8 397 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 1
+Lokalizacja:: Mierzeja
+Rok budowy:: między 2021 a 2024 r.
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/757589
+
+Dane nieruchomości:
+Powierzchnia:: 31 m²
+Piętro:: Parter
+Cena:: 263 500 zł  
+(8 500 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 1
+Lokalizacja:: Mierzeja
+Rok budowy:: między 2021 a 2024 r.
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/future-nieruchomosci-sprzedam-dzialke/756597
+
+Dane nieruchomości:
+Powierzchnia:: 1106 m²
+Cena:: 55 350 zł  
+(50 zł/m²)
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/future-nieruchomosci-sprzedam-dzialke/756596
+
+Dane nieruchomości:
+Powierzchnia:: 4254 m²
+Cena:: 191 430 zł  
+(45 zł/m²)
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/755125
+
+Dane nieruchomości:
+Powierzchnia:: 31 m²
+Piętro:: Parter
+Cena:: 495 000 zł  
+(15 968 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 1
+Lokalizacja:: Mierzeja
+Rok budowy:: między 2011 a 2020 r.
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/753321
+
+Dane nieruchomości:
+Powierzchnia:: 65 m²
+Piętro:: 12
+Cena:: 590 000 zł  
+(9 077 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 3
+Lokalizacja:: Elbląg
+Typ zabudowy:: apartamentowiec
+Rok budowy:: między 2021 a 2024 r.
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/domy-mieszkalne/future-nieruchomosci-sprzedam-dom-marynowy/752877
+
+Dane nieruchomości:
+Powierzchnia:: 219 m²
+Liczba pięter:: 2
+Cena:: 599 000 zł  
+(2 735 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 6
+Lokalizacja:: pow. nowodworski
+Typ budynku:: wolnostojący
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/752210
+
+Dane nieruchomości:
+Powierzchnia:: 35 m²
+Piętro:: Parter
+Cena:: 590 000 zł  
+(16 857 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 2
+Lokalizacja:: Mierzeja
+Rok budowy:: między 2011 a 2020 r.
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/future-nieruchomosci-sprzedam-dzialke/751580
+
+Dane nieruchomości:
+Powierzchnia:: 5755 m²
+Cena:: 195 000 zł  
+(34 zł/m²)
+Lokalizacja:: pow. elbląski
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/future-nieruchomosci-sprzedam-dzialke/751037
+
+Dane nieruchomości:
+Powierzchnia:: 21600 m²
+Cena:: 194 000 zł  
+(9 zł/m²)
+Lokalizacja:: pow. elbląski
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/dzialki-grunty/future-nieruchomosci-sprzedam-dzialke-elblag/750791
+
+Dane nieruchomości:
+Powierzchnia:: 14565 m²
+Cena:: 1 456 500 zł  
+(100 zł/m²)
+Lokalizacja:: Elbląg
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/domy-mieszkalne/future-nieruchomosci-sprzedam-dom-elblag-dom/750121
+
+Dane nieruchomości:
+Powierzchnia:: 110 m²
+Liczba pięter:: 2
+Cena:: 950 000 zł  
+(8 636 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 4
+Lokalizacja:: Elbląg
+Typ budynku:: bliźniak
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-mieszkalne/future-nieruchomosci-sprzedam-mieszkanie/749506
+
+Dane nieruchomości:
+Powierzchnia:: 62 m²
+Piętro:: Parter
+Cena:: 492 000 zł  
+(7 935 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 3
+Lokalizacja:: Elbląg
+Rok budowy:: między 1991 a 2000 r.
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/lokale-i-budynki-uzytkowe/future-nieruchomosci-sprzedam-komercyjny/749505
+
+Dane nieruchomości:
+Powierzchnia:: 47 m²
+Cena:: 310 000 zł  
+(6 596 zł/m²)
+Lokalizacja:: Elbląg
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
+Link do danych: https://www.portel.pl/ogloszenia/nieruchomosci/domy-mieszkalne/future-nieruchomosci-sprzedam-dom-bronikowo/746770
+
+Dane nieruchomości:
+Powierzchnia:: 222 m²
+Liczba pięter:: 1
+Cena:: 1 450 000 zł  
+(6 532 zł/m²)
+Rynek:: wtórny
+Liczba pokoi:: 7
+Lokalizacja:: pow. elbląski
+Typ budynku:: wolnostojący
+
+Dane kontaktowe:
+Adres: 82-300 Elbląg, Aleja Jana Pawła II 1 lok. A
+Tel.: None
+Kom.: 55X XXX XXX (pokaż)
+
