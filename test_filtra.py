@@ -9,8 +9,8 @@ db = client['PRiR']
 # Wybór kolekcji
 collection = db['Mieszkania']
 
-# Definicja zapytania - wszystkie rekordy, gdzie pole "Rynek" ma wartość "wtórny"
-query = {"Dane nieruchomości.Rynek:": "wtórny"}
+# Definicja zapytania - wszystkie rekordy, gdzie pole "Piętro" ma wartość "1"
+query = {"Piętro:": "2"}
 
 # Wykonanie zapytania
 results = collection.find(query)

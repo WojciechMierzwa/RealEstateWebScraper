@@ -24,6 +24,7 @@ def scrape():
     min_rooms = request.args.get('min_rooms')
     max_rooms = request.args.get('max_rooms')
     market = request.args.get('market')
+    floor = request.args.get('floor')
     
     # Construct query based on provided parameters
     query = {}
@@ -35,13 +36,16 @@ def scrape():
         query['Powierzchnia'] = {'$gte': int(min_area)}
     if max_area:
         query.setdefault('Powierzchnia', {}).update({'$lte': int(max_area)})
+    if floor:
+        query.setdefault('Dane nieruchomości.Piętro:', {}).update({'$eq': floor})
     if min_rooms:
-        query['Liczba_pokoi'] = {'$gte': int(min_rooms)}
+        query['Dane nieruchomości.Liczba pokoi:'] = {'$gte': min_rooms}
     if max_rooms:
-        query.setdefault('Liczba_pokoi', {}).update({'$lte': int(max_rooms)})
+        query.setdefault('Dane nieruchomości.Liczba pokoi:', {}).update({'$lte': max_rooms})
+
     if market:
         if market == 'pierwotny' or market == 'wtórny':
-            query['Dane nieruchomości.Rynek:'] = market  # Poprawiono nazwę pola
+            query['Dane nieruchomości.Rynek:'] = market  # Zachowujemy dwukropki
     
     # Query MongoDB with the constructed query
     results = collection.find(query)
