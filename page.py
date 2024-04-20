@@ -41,7 +41,7 @@ def scrape():
         query.setdefault('Liczba_pokoi', {}).update({'$lte': int(max_rooms)})
     if market:
         if market == 'pierwotny' or market == 'wtórny':
-            query['Rynek'] = market
+            query['Dane nieruchomości.Rynek:'] = market  # Poprawiono nazwę pola
     
     # Query MongoDB with the constructed query
     results = collection.find(query)
