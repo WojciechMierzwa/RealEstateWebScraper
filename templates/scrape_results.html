@@ -82,22 +82,39 @@
 </head>
 <body>
     <div class="container">
-        <!-- Filter form -->
         <form class="filter-form" action="/scrape" method="GET">
-            <label for="min_rooms">Min Rooms:</label>
-            <input type="text" id="min_rooms" name="min_rooms">
-            <label for="max_rooms">Max Rooms:</label>
-            <input type="text" id="max_rooms" name="max_rooms">
-            <label for="floor">Floor:</label>
-            <input type="text" id="floor" name="floor">
-            <label for="market">Market:</label>
+            <label for="market">Rynek:</label>
             <select id="market" name="market">
                 <option value="">Dowolny</option>
                 <option value="pierwotny">Pierwotny</option>
                 <option value="wtórny">Wtórny</option>
             </select>
+            <label for="floor">Piętro:</label>
+            <input type="text" id="floor" name="floor">
+            <label for="min_rooms">Minimalna ilość pokoi:</label>
+            <input type="text" id="min_rooms" name="min_rooms">
+            <label for="max_rooms">Maksymalna ilość pokoi:</label>
+            <input type="text" id="max_rooms" name="max_rooms">
+            <label for="sort_date">Data ogłoszenia:</label>
+            <select id="sort_date" name="sort_date">
+                <option value="">Brak</option>
+                <option value="asc">Najstarsze</option>
+                <option value="desc">Najnowsze</option>
+            </select>
+            <label for="sort_price">Cena:</label>
+            <select id="sort_price" name="sort_price">
+                <option value="">Brak</option>
+                <option value="asc">Najniższa cena</option>
+                <option value="desc">Najwyższa cena</option>
+            </select>
+            <label for="sort_area">Powierzchnia:</label>
+            <select id="sort_area" name="sort_area">
+                <option value="">Brak</option>
+                <option value="asc">Najmniejsza powierzchnia</option>
+                <option value="desc">Największa powierzchnia</option>
+            </select>
 
-            <input type="submit" value="Apply Filters">
+            <input type="submit" value="Filtruj">
         </form>
 
         <!-- Results -->
@@ -159,7 +176,7 @@
                 <tr>
                     <th colspan="2">Zdjęcia:</th>
                 </tr>
-              <!--  <tr>
+               <tr>
                     <td colspan="2">
                         <div class="images-container">
                             {% for image in result['Linki do obrazow'] %}
@@ -169,7 +186,7 @@
                             {% endfor %}
                         </div>
                     </td>
-                </tr>-->
+                </tr>
             </table>
         </div>
         {% endfor %}
