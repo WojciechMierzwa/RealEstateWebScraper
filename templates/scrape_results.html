@@ -64,20 +64,26 @@
             border-radius: 4px;
             cursor: pointer;
         }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .image-wrapper {
+            margin: 5px;
+        }
+        .image-wrapper img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Filter form -->
         <form class="filter-form" action="/scrape" method="GET">
-            <label for="min_price">Min Price:</label>
-            <input type="text" id="min_price" name="min_price">
-            <label for="max_price">Max Price:</label>
-            <input type="text" id="max_price" name="max_price">
-            <label for="min_area">Min Area:</label>
-            <input type="text" id="min_area" name="min_area">
-            <label for="max_area">Max Area:</label>
-            <input type="text" id="max_area" name="max_area">
             <label for="min_rooms">Min Rooms:</label>
             <input type="text" id="min_rooms" name="min_rooms">
             <label for="max_rooms">Max Rooms:</label>
@@ -102,21 +108,68 @@
                 <tr>
                     <th colspan="2">Dane nieruchomości:</th>
                 </tr>
-                {% for key, value in result['Dane nieruchomości'].items() %}
                 <tr>
-                    <td>{{ key }}</td>
-                    <td>{{ value }}</td>
+                    <td>Link</td>
+                    <td>{{ result['Link do danych'] }}</td>
                 </tr>
-                {% endfor %}
                 <tr>
-                    <th colspan="2">Dane kontaktowe:</th>
+                    <td>Rynek</td>
+                    <td>{{ result['Rynek:'] }}</td>
                 </tr>
-                {% for key, value in result['Dane kontaktowe'].items() %}
                 <tr>
-                    <td>{{ key }}</td>
-                    <td>{{ value }}</td>
+                    <td>Powierzchnia</td>
+                    <td>{{ result['Powierzchnia:'] }}</td>
                 </tr>
-                {% endfor %}
+                <tr>
+                    <td>Piętro</td>
+                    <td>{{ result['Piętro:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Cena</td>
+                    <td>{{ result['Cena:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Liczba pokoi</td>
+                    <td>{{ result['Liczba pokoi:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Lokalizacja</td>
+                    <td>{{ result['Lokalizacja:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Typ zabudowy</td>
+                    <td>{{ result['Typ zabudowy:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Adres</td>
+                    <td>{{ result['Dane kontaktowe']['Adres'] }}</td>
+                </tr>
+                <tr>
+                    <td>Tel</td>
+                    <td>{{ result['Dane kontaktowe']['Tel.'] }}</td>
+                </tr>
+                <tr>
+                    <td>Kom</td>
+                    <td>{{ result['Dane kontaktowe']['Kom.'] }}</td>
+                </tr>
+                <tr>
+                    <td>Data dodania</td>
+                    <td>{{ result['Data ogłoszenia'] }}</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Zdjęcia:</th>
+                </tr>
+              <!--  <tr>
+                    <td colspan="2">
+                        <div class="images-container">
+                            {% for image in result['Linki do obrazow'] %}
+                            <div class="image-wrapper">
+                                <img src="{{ image }}" alt="Zdjęcie">
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr>-->
             </table>
         </div>
         {% endfor %}

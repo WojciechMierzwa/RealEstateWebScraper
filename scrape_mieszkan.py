@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
-from multiprocessing import Pool
 import asyncio
+from multiprocessing import Pool
 
 def connect_to_mongodb():
     # Połącz się z lokalną instancją MongoDB
@@ -15,7 +15,7 @@ def connect_to_mongodb():
 
 def pobierz_linki():
     links = []
-    for i in range(2):
+    for i in range(5):
         url = f"https://www.portel.pl/ogloszenia/nieruchomosci?ns={i}"
         response = requests.get(url)
         soup = BeautifulSoup(response.text, "html.parser")
@@ -43,15 +43,50 @@ def pobierz_dane_mieszkania(link):
         tel = dane_kontaktowe.find('div', id='telkon').find('h5').text.strip() if dane_kontaktowe.find('div', id='telkon') else None
         kom = dane_kontaktowe.find('div', id='gsmkon').find('h5').text.strip() if dane_kontaktowe.find('div', id='gsmkon') else None
 
-        return {
-            "Link do danych": full_link,
-            "Dane nieruchomości": dane,
-            "Dane kontaktowe": {
-                "Adres": adres,
-                "Tel.": tel,
-                "Kom.": kom
-            }
+        dane["Link do danych"] = full_link
+        dane["Dane kontaktowe"] = {
+            "Adres": adres,
+            "Tel.": tel,
+            "Kom.": kom
         }
+        
+        # Pobierz datę z ogłoszenia
+        data = pobierz_date(full_link)
+        if data:
+            dane["Data ogłoszenia"] = data
+        
+        # Pobierz linki do obrazów
+        linki_obrazow = pobierz_linki_obrazow(full_link)
+        dane["Linki do obrazow"] = linki_obrazow
+        
+        return dane
+    return None
+
+def pobierz_date(full_link):
+    response = requests.get(full_link)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.text, 'html.parser')
+        target_div = soup.find('div', class_='list darmp')
+        if target_div:
+            target_small = target_div.find('small')
+            if target_small:
+                text = target_small.get_text()
+                data = text.split('z')[1].strip()
+                return data
+    return None
+
+def pobierz_linki_obrazow(full_link):
+    image_links = []
+    response = requests.get(full_link)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.text, 'html.parser')
+        image_divs = soup.find_all('div', class_='fotocont0')
+        for div in image_divs:
+            links = div.find_all('a', class_='swipebox')
+            for link in links:
+                img_link = 'https://www.portel.pl' + link['href']
+                image_links.append(img_link)
+    return image_links
 
 async def zapisz_dane_do_mongodb_async(data, collection):
     await asyncio.sleep(0)  # Symulacja operacji asynchronicznej
@@ -74,7 +109,6 @@ def main():
     asyncio.set_event_loop(loop)
     tasks = [zapisz_dane_do_mongodb_async(mieszkanie, collection) for mieszkanie in mieszkania]
     loop.run_until_complete(asyncio.gather(*tasks))
-
 
 if __name__ == "__main__":
     main()
