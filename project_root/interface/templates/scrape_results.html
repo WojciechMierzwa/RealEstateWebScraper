@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrape Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        /* Style for filter form */
+        .filter-form {
+            margin-bottom: 20px;
+        }
+        .filter-form input[type="text"],
+        .filter-form select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .filter-form input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .image-wrapper {
+            margin: 5px;
+        }
+        .image-wrapper img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="filter-form" action="/scrape" method="GET">
+            <label for="market">Rynek:</label>
+            <select id="market" name="market">
+                <option value="">Dowolny</option>
+                <option value="pierwotny">Pierwotny</option>
+                <option value="wtórny">Wtórny</option>
+            </select>
+            <label for="floor">Piętro:</label>
+            <input type="text" id="floor" name="floor">
+            <label for="min_rooms">Minimalna ilość pokoi:</label>
+            <input type="text" id="min_rooms" name="min_rooms">
+            <label for="max_rooms">Maksymalna ilość pokoi:</label>
+            <input type="text" id="max_rooms" name="max_rooms">
+            <label for="sort_date">Data ogłoszenia:</label>
+            <select id="sort_date" name="sort_date">
+                <option value="">Brak</option>
+                <option value="asc">Najstarsze</option>
+                <option value="desc">Najnowsze</option>
+            </select>
+            <label for="sort_price">Cena:</label>
+            <select id="sort_price" name="sort_price">
+                <option value="">Brak</option>
+                <option value="asc">Najniższa cena</option>
+                <option value="desc">Najwyższa cena</option>
+            </select>
+            <label for="sort_area">Powierzchnia:</label>
+            <select id="sort_area" name="sort_area">
+                <option value="">Brak</option>
+                <option value="asc">Najmniejsza powierzchnia</option>
+                <option value="desc">Największa powierzchnia</option>
+            </select>
+
+            <input type="submit" value="Filtruj">
+        </form>
+
+        <!-- Results -->
+        {% for result in results %}
+        <div class="box">
+            <h2><a href="{{ result['Link do danych'] }}">{{ result['Link do danych'] }}</a></h2>
+            <table>
+                <tr>
+                    <th colspan="2">Dane nieruchomości:</th>
+                </tr>
+                <tr>
+                    <td>Link</td>
+                    <td>{{ result['Link do danych'] }}</td>
+                </tr>
+                <tr>
+                    <td>Rynek</td>
+                    <td>{{ result['Rynek:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Powierzchnia</td>
+                    <td>{{ result['Powierzchnia:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Piętro</td>
+                    <td>{{ result['Piętro:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Cena</td>
+                    <td>{{ result['Cena:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Liczba pokoi</td>
+                    <td>{{ result['Liczba pokoi:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Lokalizacja</td>
+                    <td>{{ result['Lokalizacja:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Typ zabudowy</td>
+                    <td>{{ result['Typ zabudowy:'] }}</td>
+                </tr>
+                <tr>
+                    <td>Adres</td>
+                    <td>{{ result['Dane kontaktowe']['Adres'] }}</td>
+                </tr>
+                <tr>
+                    <td>Tel</td>
+                    <td>{{ result['Dane kontaktowe']['Tel.'] }}</td>
+                </tr>
+                <tr>
+                    <td>Kom</td>
+                    <td>{{ result['Dane kontaktowe']['Kom.'] }}</td>
+                </tr>
+                <tr>
+                    <td>Data dodania</td>
+                    <td>{{ result['Data ogłoszenia'] }}</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Zdjęcia:</th>
+                </tr>
+               <tr>
+                    <td colspan="2">
+                        <div class="images-container">
+                            {% for image in result['Linki do obrazow'] %}
+                            <div class="image-wrapper">
+                                <img src="{{ image }}" alt="Zdjęcie">
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

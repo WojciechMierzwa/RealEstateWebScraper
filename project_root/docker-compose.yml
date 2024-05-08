@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  web:
+    build: ./interface
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+
+  engine:
+    build: ./engine
+    ports:
+      - "8080:8080"
+    command: python engine.py
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
